@@ -1,4 +1,4 @@
-package seavisual.main.java;
+package util;
 
 /**
  * @author zhangdekun
