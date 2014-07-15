@@ -1,6 +1,5 @@
 package service;
 
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,7 @@ import dao.localDomain.model.User;
 public class UserService {
     @Autowired
     private UserDAO userDAO;
-    public List<User> login(Map<String,Object> map){
-        return userDAO.getUserList(map);
+    public User login(Map<String,Object> map){
+        return userDAO.getUserBynameAndPwd(map);
     }
 }

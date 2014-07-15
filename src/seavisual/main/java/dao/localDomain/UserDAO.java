@@ -7,4 +7,5 @@ import dao.localDomain.model.User;
 
 public interface UserDAO {
     public List<User>  getUserList(Map<String,Object> map);
+    public User getUserBynameAndPwd(Map<String,Object> map);
 }
